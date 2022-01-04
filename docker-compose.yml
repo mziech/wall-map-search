@@ -1,0 +1,11 @@
+---
+version: "3.8"
+services:
+  server:
+    image: node:lts
+    volumes:
+      - .:/work
+      - ./docker/docker-as-user.sh:/docker-as-user.sh:ro
+    command: /docker-as-user.sh "cd /work && npm install && npm run start"
+    ports:
+      - "3000:3000"

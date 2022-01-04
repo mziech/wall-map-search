@@ -1,0 +1,10 @@
+{
+  "map": {
+    "path": "data/pharus-berlin-2020.json"
+  },
+  "catalog": {
+    "path": "data/example.csv",
+    "columns": ["Kategorie", "Name", "Koordinate"],
+    "indexed": ["Name ohne Ortsteil", "Name"]
+  }
+}
