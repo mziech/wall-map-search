@@ -1,3 +1,6 @@
+![.github/workflows/package.yml](https://github.com/mziech/wall-map-search/workflows/.github/workflows/package.yml/badge.svg)
+![.github/workflows/docker.yml](https://github.com/mziech/wall-map-search/workflows/.github/workflows/docker.yml/badge.svg)
+
 # Wall Map Search
 
 Lookup street locations on a wall map using the grid.
