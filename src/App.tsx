@@ -55,7 +55,7 @@ function App() {
     const isCatalogActive = useMatch("/catalog");
 
     useEffect(() => {
-        loadConfig("data/config.json").then(config => setConfig(config));
+        loadConfig(`${process.env.PUBLIC_URL}/data/config.json`).then(config => setConfig(config));
     }, []);
 
     if (config === undefined) {

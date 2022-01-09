@@ -7,6 +7,20 @@ Lookup street locations on a wall map using the grid.
 
 ![Screenshot](screenshot.png)
 
+## Running it
+
+Easiest way to run this application is using Docker:
+```
+docker run -p 80:80 ghcr.io/mziech/wall-map-search
+```
+
+Since the application uses client-side routing, hosting it under a different path may be a bit tricky.
+With the Docker image you can specify the `PUBLIC_URL` environment variable to adjust the base path.
+The following command will make the application available under http://localhost/foo/:
+```
+docker run -p 80:80 -e PUBLIC_URL=/foo ghcr.io/mziech/wall-map-search
+```
+
 ## Catalog based search
 
 If you got the street name directory from the vendor,
